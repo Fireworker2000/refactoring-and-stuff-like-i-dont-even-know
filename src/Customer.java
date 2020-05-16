@@ -1,4 +1,3 @@
-import java.lang.*;
 import java.util.*;
 
 class Customer {
@@ -40,7 +39,7 @@ class Customer {
         }
 
         //add footer lines
-        result.append("Amount owed is ").append(totalAmount).append(".\n");
+        result.append("Amount owed is ").append(totalAmount).append(", lulz.\n");
         result.append("Congrats, you earned ").append(frequentRenterPoints).append(" totally worthless loyalty points.");
         return result.toString();
     }
