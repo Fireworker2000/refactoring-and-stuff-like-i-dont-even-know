@@ -3,16 +3,15 @@ import java.lang.*;
 import java.util.*;
 
 class Customer {
-    private String name;
-    private Vector rentals = new Vector();
+    private final String name;
+    private final Vector rentals;
 
     public Customer (String newname){
+        rentals = new Vector();
         name = newname;
     };
 
-    public void addRental(Rental arg) {
-        rentals.addElement(arg);
-    };
+    public void addRental(Rental arg) { rentals.addElement(arg); }
 
     public String getName (){
         return name;
