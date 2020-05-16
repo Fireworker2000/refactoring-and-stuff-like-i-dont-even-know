@@ -18,14 +18,14 @@ public class Program
 
         Movie m1 = Movie.generate("movie1", 1);
         Movie m2 = Movie.generate("movie2", 2);
-        Renntal r1 = new Renntal(m1, 10);
-        Renntal r2 = new Renntal(m2, 5);
+        Rental r1 = new Rental(m1, 10);
+        Rental r2 = new Rental(m2, 5);
 
-        Customer c1 = new Customer("joe");
+        Customer c1 = new Customer("Razorblade Jannes der Lokomotivführer von England");
         c1.addRental(r1);
         c1.addRental(r2);
 
-        System.out.println("Let's get the Statement");
+        System.out.println("Let's get that gorgeous data.");
         result = c1.statement();
         System.out.println(result);
     }
