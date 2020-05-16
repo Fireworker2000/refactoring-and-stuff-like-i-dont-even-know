@@ -1,4 +1,3 @@
-
 import java.lang.*;
 import java.util.*;
 
@@ -22,7 +21,7 @@ class Customer {
         int frequentRenterPoints = 0;
         Enumeration enum_rentals = rentals.elements();
 
-        StringBuilder result = new StringBuilder("Rental Record for " + this.getName() + "\n");
+        StringBuilder result = new StringBuilder("Rental Record for " + this.getName() + ":\n");
         result.append("\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n");
 
         while (enum_rentals.hasMoreElements()) {
@@ -36,13 +35,13 @@ class Customer {
                 frequentRenterPoints ++;
 
             //show figures for this rental
-            result.append("\t").append(rental.getMovie().getTitle()).append("\t").append("\t").append(rental.getDaysRented()).append("\t").append(thisAmount).append("\n");
+            result.append("\t").append(rental.getMovie().getTitle()).append("\t").append("\t").append(rental.getDaysRented()).append("\t").append("\t").append(thisAmount).append("\n");
             totalAmount += thisAmount;
         }
 
         //add footer lines
         result.append("Amount owed is ").append(totalAmount).append(".\n");
-        result.append("You earned ").append(frequentRenterPoints).append(" totally worthless loyalty points.");
+        result.append("Congrats, you earned ").append(frequentRenterPoints).append(" totally worthless loyalty points.");
         return result.toString();
     }
 
