@@ -18,8 +18,8 @@ public class Program
 
         Movie m1 = Movie.generate("movie1", 1);
         Movie m2 = Movie.generate("movie2", 2);
-        Rental r1 = new Rental(m1, 10);
-        Rental r2 = new Rental(m2, 5);
+        Renntal r1 = new Renntal(m1, 10);
+        Renntal r2 = new Renntal(m2, 5);
 
         Customer c1 = new Customer("joe");
         c1.addRental(r1);
