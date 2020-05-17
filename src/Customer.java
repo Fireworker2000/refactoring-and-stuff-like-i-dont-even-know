@@ -39,7 +39,7 @@ class Customer {
         }
 
         //add footer lines
-        result.append("Amount owed is ").append(totalAmount).append(", lulz.\n");
+        result.append("Amount owed is ").append(totalAmount).append(", pay or you'll regret it.\n");
         result.append("Congrats, you earned ").append(frequentRenterPoints).append(" totally worthless loyalty points.");
         return result.toString();
     }
